@@ -10,6 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
+import org.springframework.lang.NonNull;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
@@ -29,9 +30,9 @@ public class AuthenticationFilter extends OncePerRequestFilter {
     private final ObjectMapper objectMapper;
 
     @Override
-    protected void doFilterInternal(HttpServletRequest request, 
-                                   HttpServletResponse response, 
-                                   FilterChain filterChain) 
+    protected void doFilterInternal(@NonNull HttpServletRequest request, 
+                                   @NonNull HttpServletResponse response, 
+                                   @NonNull FilterChain filterChain) 
             throws ServletException, IOException {
         
         // Skip authentication for OPTIONS requests (CORS)

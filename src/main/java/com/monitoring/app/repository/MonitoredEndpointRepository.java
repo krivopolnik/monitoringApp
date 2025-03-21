@@ -12,5 +12,4 @@ import java.util.Optional;
 public interface MonitoredEndpointRepository extends JpaRepository<MonitoredEndpoint, Long> {
     List<MonitoredEndpoint> findAllByOwner(User owner);
     Optional<MonitoredEndpoint> findByIdAndOwner(Long id, User owner);
-    List<MonitoredEndpoint> findAll();
 } 
