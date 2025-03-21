@@ -24,16 +24,16 @@ A service for monitoring HTTP/HTTPS URLs, allowing you to track their availabili
 ### Running with Docker Compose (recommended)
 
 1. Make sure you have Docker and Docker Compose installed
-2. Clone the repository: `git clone https://github.com/yourusername/monitoring-app.git`
-3. Navigate to the project directory: `cd monitoring-app`
+2. Clone the repository: `git clone https://github.com/krivopolnik/monitoringApp.git`
+3. Navigate to the project directory: `cd monitoringApp`
 4. Start the application: `docker-compose up -d`
 5. The application will be available at: `http://localhost:8080`
 
 ### Running with Maven
 
 1. Make sure you have Java 11 and MySQL installed
-2. Clone the repository: `git clone https://github.com/yourusername/monitoring-app.git`
-3. Navigate to the project directory: `cd monitoring-app`
+2. Clone the repository: `git clone https://github.com/krivopolnik/monitoringApp.git`
+3. Navigate to the project directory: `cd monitoringApp`
 4. Create a MySQL database named `monitoring_db`
 5. Configure the database connection parameters in `src/main/resources/application.properties`
 6. Build the project: `mvn clean package`
